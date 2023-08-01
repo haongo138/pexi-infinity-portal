@@ -41,6 +41,9 @@ dependencies:
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
+  tsparticles-engine:
+    specifier: ^2.11.1
+    version: 2.11.1
   tsparticles-slim:
     specifier: ^2.11.1
     version: 2.11.1
