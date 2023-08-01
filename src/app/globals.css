@@ -110,7 +110,7 @@ body {
 
 .text-redzone {
   --tw-text-opacity: 1;
-    color: rgba(244 63 94 var(--tw-text-opacity));
+  color: rgba(244, 63, 94, var(--tw-text-opacity));
 }
 
 .text-meme {
