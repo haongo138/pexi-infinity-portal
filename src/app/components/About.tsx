@@ -130,7 +130,7 @@ export default function Header() {
             <div>
               <p className="text-3xl">get some ETH</p>
               <p className="text-xl text-white">
-                have ETH in your wallet to switch to $KEKK. If you don’t have
+                have ETH in your wallet to switch to $PIY. If you don’t have
                 any ETH, you can buy directly on metamask, transfer from another
                 wallet, or buy on another exchange and send it to your wallet.
               </p>
