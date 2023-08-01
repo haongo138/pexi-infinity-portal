@@ -5,6 +5,7 @@ import type { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
 
 export default function Header() {
+  const contractAddress = process.env.CONTRACT_ADDRESS ?? "0x000000000000000000000000000000000000dEaD";
   const images = [
     {
       src: "/images/nft_00.png",
@@ -67,7 +68,7 @@ export default function Header() {
       </div>
       <a
         className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pastel font-clash-semi w-36 text-center border-2"
-        href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x420A210dA79512D38A00796d35beA4bFFc0F7dB9"
+        href={`https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=${contractAddress}`}
       >
         UNISWAP
       </a>

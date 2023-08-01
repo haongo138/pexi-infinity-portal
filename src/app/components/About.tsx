@@ -67,10 +67,7 @@ export default function Header() {
             {String.fromCharCode(10004)} All liquidity goes to a multi-sig
             wallet, you can track all activities by the name
           </p>
-          {/* <p className="mt-3 text-2xl font-clash-semi text-redzone">
-            CA: 0x000000000000000000000000000000000000dEaD
-          </p> */}
-          <CopyContractBox />
+          <CopyContractBox textToCopy={process.env.CONTRACT_ADDRESS} />
         </div>
         <div>
           <p className="text-4xl lg:text-5xl text-pepe font-clash-semi">
