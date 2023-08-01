@@ -27,7 +27,7 @@ export default function CopyBtnDemo({ textToCopy = '0x00000000000000000000000000
         onClick={copyToClipboard}
         className={
           btnStyle +
-          " relative z-10 text-sm font-clash border w-56 border-gray-500 rounded p-2 transition"
+          " text-lg font-clash border w-64 border-gray-500 rounded p-2 transition"
         }
       >
         {copied ? "Copied to clipboard" : "Click to copy $PIY contract"}

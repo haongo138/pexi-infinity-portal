@@ -3,8 +3,6 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import type { Container, Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim";
-import Image from "next/image";
-import CopyContractBox from "./CopyContract";
 
 export default function Header() {
   const images = [
@@ -61,69 +59,32 @@ export default function Header() {
   );
 
   return (
-    <div className="flex relative flex-col justify-center items-center py-20 w-full h-screen bg-gray-800 shadow-2xl shadow-gray-900">
-      <div className="flex absolute top-5 left-6 z-10 gap-x-1">
-        <p className="text-3xl text-pepe font-clash-semi">Pexi Infinity</p>
-        <Image
-          src="/images/nft_02.png"
-          width={40}
-          height={40}
-          alt="axie soyak"
-          decoding="async"
-          loading="lazy"
-          className="object-contain"
-        />
+    <div className="flex relative flex-col justify-center items-center py-20 w-full h-screen bg-[url('/images/bg_no_logo.jpg')] shadow-2xl shadow-gray-900">
+      <div className="relative z-10 flex-col justify-center">
+        <p className="text-8xl text-center text-pastel font-clash-bold backdrop-opacity-20 backdrop-grayscale rounded-lg p-2">
+          PEXI<br/>INFINITY
+        </p>
       </div>
-      <p className="relative z-10 text-7xl text-center uppercase text-pepe font-clash-bold">
-        $PIY
-      </p>
-      <div className="relative w-full h-80">
-        <Image
-          src="/images/logo_rounded.png"
-          alt="drop crown meme"
-          loading="lazy"
-          decoding="async"
-          width={60}
-          height={60}
-          style={{
-            position: "absolute",
-            height: "100%",
-            width: "100%",
-            left: 0,
-            top: 0,
-            right: 0,
-            bottom: 0,
-            color: "transparent",
-          }}
-          sizes="100vw"
-          className="object-contain"
-        />
-      </div>
-      <p className="relative z-10 mt-10 text-2xl text-pepe font-clash-semi">
-        Contract Address
-      </p>
-      {/* <p className="relative z-10 px-2 text-lg break-all text-pepe font-clash-semi">0x000000000000000000000000000000000000dEaD</p> */}
-      <CopyContractBox />
       <a
-        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pepe font-clash-semi w-48 text-center border"
-        href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x000000000000000000000000000000000000dEaD"
+        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pastel font-clash-semi w-36 text-center border-2"
+        href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x420A210dA79512D38A00796d35beA4bFFc0F7dB9"
       >
-        BUY
+        UNISWAP
       </a>
       <a
-        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pepe font-clash-semi w-36 text-center border"
+        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pastel font-clash-semi w-36 text-center border-2"
         href="https://twitter.com/pexiinfinity"
       >
         Twitter
       </a>
       <a
-        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pepe font-clash-semi w-36 text-center border"
+        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pastel font-clash-semi w-36 text-center border-2"
         href="https://t.me/Pexiinfinity"
       >
         Telegram
       </a>
       <a
-        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pepe font-clash-semi w-36 text-center border"
+        className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pastel font-clash-semi w-36 text-center border-2"
         href="#"
       >
         Dextools

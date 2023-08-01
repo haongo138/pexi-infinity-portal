@@ -103,9 +103,14 @@ body {
   color: rgb(255 255 255/var(--tw-text-opacity))
 }
 
+.text-pastel {
+  --tw-text-opacity: 1;
+  color: rgb(255 240 245/var(--tw-text-opacity))
+}
+
 .text-redzone {
   --tw-text-opacity: 1;
-    color: rgba(244, 63, 94, var(--tw-text-opacity));
+    color: rgba(244 63 94 var(--tw-text-opacity));
 }
 
 .text-meme {
@@ -118,4 +123,9 @@ body {
 .bg-pepe {
   --tw-bg-opacity: 1;
   background-color: rgb(89 142 55/var(--tw-bg-opacity))
+}
+
+.bg-pastel {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 173 215/var(--tw-bg-opacity))
 }
