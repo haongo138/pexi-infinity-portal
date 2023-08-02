@@ -60,7 +60,7 @@ export default function Header() {
             Tokenomics
           </p>
           <p className="mt-3 text-2xl font-clash">
-            {String.fromCharCode(10004)} Supply is 1000.000.000 $PIY with 1-1 taxes (for game development)
+            {String.fromCharCode(10004)} Supply is 1000.000.000 $PIY with 3-3 taxes (for game development)
             <br />
             {String.fromCharCode(10004)} Stealth launched with no presale, LP burnt and contract renounced.
             <br />
