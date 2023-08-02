@@ -5,31 +5,6 @@ export default function Header() {
   return (
     <div className="flex flex-col p-8 w-full lg:p-28">
       <div className="flex flex-col gap-10 lg:flex-row">
-        <div
-          className="relative flex-shrink-0 mx-auto w-full h-full"
-          style={{ height: "400px", maxWidth: "700px" }}
-        >
-          <Image
-            src="/images/trailer.gif"
-            alt="pepe holding a dildo"
-            loading="lazy"
-            decoding="async"
-            className="object-cover rounded-lg"
-            style={{
-              position: "absolute",
-              height: "100%",
-              width: "100%",
-              left: 0,
-              top: 0,
-              right: 0,
-              bottom: 0,
-              color: "transparent",
-            }}
-            sizes="100vw"
-            width={400}
-            height={400}
-          />
-        </div>
         <div>
           <p className="text-3xl font-clash-semi text-pepe">About Us</p>
           <p className="text-xl font-clash">
@@ -52,6 +27,31 @@ export default function Header() {
             <br />
             Let's revive GAMEFI together, go go go !!!
           </p>
+        </div>
+        <div
+          className="relative flex-shrink-0 mx-auto w-full h-full"
+          style={{ height: "400px", maxWidth: "700px" }}
+        >
+          <Image
+            src="/images/logo_rounded.png"
+            alt="pepe holding a dildo"
+            loading="lazy"
+            decoding="async"
+            className="object-contain"
+            style={{
+              position: "absolute",
+              height: "100%",
+              width: "100%",
+              left: 0,
+              top: 0,
+              right: 0,
+              bottom: 0,
+              color: "transparent",
+            }}
+            sizes="100vw"
+            width={400}
+            height={400}
+          />
         </div>
       </div>
       <div className="grid auto-rows-auto gap-24 mt-32 lg:grid-cols-2 lg:grid-rows-1 grid-col-1">

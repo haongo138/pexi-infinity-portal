@@ -62,7 +62,7 @@ export default function Header() {
   return (
     <div className="flex relative flex-col justify-center items-center py-20 w-full h-screen bg-[url('/images/bg_no_logo.jpg')] shadow-2xl shadow-gray-900">
       <div className="relative z-10 flex-col justify-center">
-        <p className="sm:text-8xl text-6xl text-center text-pastel font-clash-bold backdrop-opacity-20 backdrop-grayscale rounded-lg p-1">
+        <p className="sm:text-8xl text-6xl text-center text-pastel font-clash-bold backdrop-opacity-40 backdrop-grayscale rounded-lg p-1">
           PEXI<br/>INFINITY
         </p>
       </div>
@@ -70,7 +70,7 @@ export default function Header() {
         className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pastel font-clash-semi w-36 text-center border-2"
         href={`https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=${contractAddress}`}
       >
-        UNISWAP
+        Uniswap
       </a>
       <a
         className="relative z-10 py-3 px-5 mt-5 text-white rounded-full bg-pastel font-clash-semi w-36 text-center border-2"
